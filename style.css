@@ -6,9 +6,9 @@ header{
     display: flex;
     width: 95%;
     margin: auto;
-    box-shadow: 2px 2px 10px black;
     border-radius: 20px;
     justify-content: space-between;
+    font-size: larger;
 }
 .logo-container, .links{
     display: flex;
@@ -36,9 +36,9 @@ header{
     width: 95%;
     margin: auto;
     margin-top: 1%;
-    border: 3px black solid;
     display: flex;
     align-items: center;
+    font-size: larger;
 }
 .des{
     flex: 2;
@@ -46,4 +46,62 @@ header{
 }
 .des h3{
     line-height: 0%;
+}
+.buy, .add{
+    height: 8vh;
+    width: 12vw;
+    border-radius: 10px;
+    border-color: #f95959;
+    color: #f95959;
+    background-color: white;
+    font-size: 1.2em;
+    margin-top: 3%;
+}
+.buy{
+    position: relative;
+    left: 3%;
+}
+.buy:hover, .add:hover{
+    animation: hovering 100ms linear forwards;
+    cursor: pointer;
+}
+@keyframes hovering {
+    0%{
+        background-color: white;
+        color: #f95959;
+    }
+    100%{
+        background-color: #f95959;
+        color: white;
+        box-shadow: 3px 3px 8px black;
+    }
+}
+.buy:active, .add:active{
+    height: 8.1vh;
+    width: 12.1vw;
+    background-color: #f95959;
+    color: white;
+    box-shadow: 3px 3px 8px black;
+    cursor: pointer;
+}
+.lapimg{
+    filter: drop-shadow(5px 5px 5px black);
+}
+.circle{
+    height: 120vh;
+    width: 120vh;
+    border-radius: 50%;
+    background-color:rgba(146, 142, 133, 0.6);
+    position: relative;
+    transform: translate(60vw,-130vh);
+    z-index: -1;
+}
+.circle2{
+    height: 80vh;
+    width: 80vh;
+    border-radius: 50%;
+    background-color:rgba(146, 142, 133, 0.4);
+    position: relative;
+    transform: translate(35vw,-150vh);
+    z-index: -2;
 }
