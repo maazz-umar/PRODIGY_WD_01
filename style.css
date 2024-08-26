@@ -57,7 +57,7 @@ header{
     line-height: 0%;
 }
 .buy, .add{
-    aspect-ratio: 5/1;
+    aspect-ratio: 5 /1;
     width: 40%;
     border-radius: 10px;
     border-color: #f95959;
